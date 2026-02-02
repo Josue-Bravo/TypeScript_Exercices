@@ -1,5 +1,5 @@
-import Queue = require("../Queue");
-import leia = require("readline-sync")
+import leia from "readline-sync";
+import { Queue } from "../Queue";
 
 const fila: Queue<string> = new Queue<string>()
 const optionLimit: Array<string> = new Array<string>("0","1","2","3")

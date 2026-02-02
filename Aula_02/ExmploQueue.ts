@@ -1,17 +1,29 @@
-import leia = require("readline-sync")
-import Queue = require("./Queue");
+import leia from "readline-sync";
+import { Queue } from "./Queue";
 
-const fila = new Queue<string>()
+const fila = new Queue<string>();
 
-fila.enqueue("Pedro")
-fila.enqueue("Bulma")
-fila.enqueue("Guila")
-fila.enqueue("Andy")
+fila.enqueue("Renan");
+fila.enqueue("Vivian");
+fila.enqueue("Erick");
 
-fila.dequeue()
+fila.enqueue(leia.question("Digite um nome: "))
 
-console.log(fila.peek())
+console.log("*** Fila Original ***")
+fila.printQueue();
 
-fila.clear()
+console.log("\n")
 
-console.log(fila.peek())
+fila.dequeue();
+
+console.log("*** Fila após a remoção de um elemento ***")
+fila.printQueue();
+
+console.log("\n");
+
+console.log("Tamanho da fila: ", fila.count());
+
+let busca = "Erick";
+busca.toLowerCase;
+
+console.log("O Erick está na fila? ", fila.contains(busca));
