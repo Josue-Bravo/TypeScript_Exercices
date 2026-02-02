@@ -1,6 +1,6 @@
 import leia = require("readline-sync");
 
-let cores: Array<string> = new Array<string>();
+const cores: Array<string> = new Array<string>();
 let continuar: boolean = true
 let cor: string
 

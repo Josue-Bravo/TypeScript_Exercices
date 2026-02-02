@@ -1,6 +1,6 @@
 import leia = require("readline-sync");
 
-let setcollection: Set<number> = new Set<number>();
+const setcollection: Set<number> = new Set<number>();
 let continuar = true;
 let num: number;
 
